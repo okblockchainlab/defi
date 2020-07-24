@@ -11,7 +11,7 @@ curve变量及公式说明
 * n2: swap前token2的数量
 * n1': swap后token1的数量
 * n2': swap后token2的数量
-* swap前后token1，token2的数量满足： ![](https://github.com/xiangjianmeng/defi/blob/patch-1/img/curve.jpeg)
+* swap前后token1，token2的数量满足（其中A是放大系数一个常量，tokens比例不同的池子A不同）： ![](https://github.com/xiangjianmeng/defi/blob/patch-1/img/curve.jpeg)
 
 
 |  item \ project  |  uniswap                   | balancer                        |  curve                   |
