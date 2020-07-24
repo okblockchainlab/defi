@@ -1,12 +1,12 @@
 # pool based dex对比
 
-balancer变量及公式说明：
+### balancer变量及公式说明：
 * n: token数量
 * w: 资产价值比重, 小于1。balancer share pool配置参数，不可修改。
 * p: n1/n2 * (w2/w1)
 * v: n1^w1 * n2^w2
 
-curve变量及公式说明
+### curve变量及公式说明
 * n1: swap前token1的数量
 * n2: swap前token2的数量
 * n1': swap后token1的数量
@@ -18,6 +18,7 @@ curve变量及公式说明
 1. curve假设稳定币从价值层面都是锚定1美元的，所以当token1, token2两个稳定币在池子中的比例相近的时候，基本满足1：1swap即1个token会兑换处1个token
 2. 当两个稳定币的比例相差较大的时候就会按照Uniswap的兑换规律进行swap，如果池子中20%token1和80%token2，那么在用1个token1能兑换出m个token2来，m>1。比例相差越大，m变化越大即滑点越大。
 
+### defi头部AMM(Automated Market Maker) Dex对比
 
 |  item \ project  |  uniswap                   | balancer                        |  curve                   |
 |  ---             |  ---                       |  ---                            |  ---                     |
