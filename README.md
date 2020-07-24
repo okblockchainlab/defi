@@ -12,6 +12,10 @@ curve变量及公式说明
 * n1': swap后token1的数量
 * n2': swap后token2的数量
 * swap前后token1，token2的数量满足（其中A是放大系数一个常量，tokens比例不同的池子A不同）： ![](https://github.com/xiangjianmeng/defi/blob/patch-1/img/curve.jpeg)
+* 下图中的蓝线即池子token1和token2的swap变化趋势：
+![](https://github.com/xiangjianmeng/defi/blob/patch-1/img/stableswap.jpeg)
+1. curve假设稳定币从价值层面都是锚定1美元的，所以当token1, token2两个稳定币在池子中的比例相近的时候，基本满足1：1swap即1个token会兑换处1个token
+2. 当两个稳定币的比例相差较大的时候就会按照Uniswap的兑换规律进行swap，如果池子中20%token1和80%token2，那么在用1个token1能兑换出m个token2来，m>1。比例相差越大，m变化越大即滑点越大。
 
 
 |  item \ project  |  uniswap                   | balancer                        |  curve                   |
